@@ -1,0 +1,48 @@
+.page-password {
+    align-items: center !important;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-password {
+    width: 25rem;
+    padding: 2rem;
+    border: 1px solid #aaa; 
+}
+
+.espaco {
+    margin-bottom: 1rem !important;
+}
+
+.btn-password {
+    background-color: #fa0 !important;
+    color: #222 !important;
+    margin-top: 1rem !important;
+}
+
+.btn-password:hover {
+    background-color: #f80 !important;
+}
+
+.title-password {
+    margin-bottom: 2rem !important;
+}
+
+.logo {
+    align-items: center;
+    text-align: center;
+ }
+
+.logo-iw {
+    color: #222;
+    background-color: #fa0;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.logo-store {
+    color: #222;
+}
