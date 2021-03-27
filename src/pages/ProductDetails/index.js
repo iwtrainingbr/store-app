@@ -12,7 +12,19 @@ export default function ProductDetails(props) {
         .then(response => {
             setProduct(response);
         });
-    }, []);
+    }, [id]);
+
+    const addToCart = () => {
+        let cart = JSON.parse(
+            localStorage.getItem('carrinho') || '[]'
+        );
+
+        cart.push(product);
+
+        localStorage.setItem('carrinho', JSON.stringify(cart));
+
+        alert('Produto adicionado ao carrinho');
+    };
 
     return (
         <div>
@@ -20,7 +32,9 @@ export default function ProductDetails(props) {
 
             <h1>Página de Detalhes do Produto {product.name}</h1>
 
-            <img style={{width: '100%'}} src={product.photos}/>
+            <img alt={"Banner"} style={{width: '100%'}} src={product.photos}/>
+
+            <button onClick={addToCart}>Adicionar ao Carrinho</button>
         </div>
     );
 }

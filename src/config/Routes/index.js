@@ -9,6 +9,7 @@ import Roles from "../../pages/Roles";
 import Password from "../../pages/Password";
 import Contador from "../../pages/Contador";
 import Category from "../../pages/Category";
+import ShoppingCart from "../../pages/ShoppingCart";
 
 export default function Routes() {
     return (
@@ -20,6 +21,7 @@ export default function Routes() {
             <Route exact path={"/produtos/:id"} component={ProductDetails}/>
             <Route exact path={"/teste"} component={Teste}/>
             <Route exact path={"/contador"} component={Contador}/>
+            <Route exact path={"/carrinho"} component={ShoppingCart}/>
 
             <Route exact path={"/login"} component={Login}/>
             <Route exact path={"/cadastro"} component={Profile}/>
