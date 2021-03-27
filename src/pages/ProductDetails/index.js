@@ -28,7 +28,7 @@ export default function ProductDetails(props) {
 
     return (
         <div>
-            <Navbar/>
+            <Navbar history={props.history}/>
 
             <h1>Página de Detalhes do Produto {product.name}</h1>
 
