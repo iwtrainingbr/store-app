@@ -12,12 +12,12 @@ export default function Login(props) {
                 </Typography>
             </div>
             <div className={"form-login"}>
-                <form onSubmit={() => props.history.push('/inicio')}>
+                <form id={"form-login"} onSubmit={() => props.history.push('/inicio')}>
                     <Typography variant="h4" className="title-login" >
                         Fazer login
                     </Typography>
-                    <TextField className="email" label={"Email"} variant={"outlined"} fullWidth required/>
-                    <TextField className="password" label={"Senha"} variant={"outlined"} type={"password"} autoComplete={"current-password"} fullWidth required/>
+                    <TextField id={"email"} className="email" label={"Email"} variant={"outlined"} fullWidth required/>
+                    <TextField id={"senha"} className="password" label={"Senha"} variant={"outlined"} type={"password"} autoComplete={"current-password"} fullWidth required/>
                     <Link to="/recuperarsenha">
                         <p className="btn-pass">Esqueci a senha</p>
                     </Link>
