@@ -34,7 +34,7 @@ export default function ProductDetails(props) {
 
             <img alt={"Banner"} style={{width: '100%'}} src={product.photos}/>
 
-            <button onClick={addToCart}>Adicionar ao Carrinho</button>
+            <button id={"add-carrinho"} onClick={addToCart}>Adicionar ao Carrinho</button>
         </div>
     );
 }

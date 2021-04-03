@@ -66,7 +66,7 @@ _______________________ %0A  %0A  %0A
 
             <hr/>
 
-            <a rel="noreferrer" href={url_whatsapp} target="_blank">
+            <a rel="noreferrer" id={"finalizar-pedido"} href={url_whatsapp} target="_blank">
                 Finalizar Pedido
             </a>
         </div>

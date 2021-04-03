@@ -12,4 +12,13 @@ describe('Teste do login', () => {
        cy.get('#senha').type('12345678');
        cy.get('#form-login').submit();
    });
+
+   it('Certificar que o login deu certo', () => {
+       cy.contains('Sair');
+   });
+
+   it('Testar se desloga e volta pra pagina de login', () => {
+      cy.get('#logout').click();
+      cy.contains('Fazer login');
+   });
 }); //npx cypress open

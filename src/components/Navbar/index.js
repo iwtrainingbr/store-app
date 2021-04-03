@@ -35,13 +35,13 @@ export default function Navbar(props) {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton onClick={() => setMenuVisible(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <IconButton id={"abrir-menu"} onClick={() => setMenuVisible(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
                         Iw Store
                     </Typography>
-                    <Button color="inherit">Sair</Button>
+                    <Button id={"logout"} onClick={() => props.history.push('/')} color="inherit">Sair</Button>
                 </Toolbar>
             </AppBar>
 
@@ -65,7 +65,7 @@ export default function Navbar(props) {
                         <ListItemText>Pedidos</ListItemText>
                     </ListItem>
 
-                    <ListItem button onClick={() => props.history.push('/carrinho')}>
+                    <ListItem button id={"pagina-carrinho"} onClick={() => props.history.push('/carrinho')}>
                         <ListItemIcon><ShoppingCart/></ListItemIcon>
                         <ListItemText>Carrinho</ListItemText>
                     </ListItem>

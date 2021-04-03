@@ -30,7 +30,7 @@ export default function Category(props) {
                 return (
                     <div style={{margin: 15}}>
                         <Card>
-                            <CardActionArea onClick={() => props.history.push(`/produtos/${prod.id}`)}>
+                            <CardActionArea data-action={"acessar-pedido"} onClick={() => props.history.push(`/produtos/${prod.id}`)}>
                                 <CardMedia style={{height: 300, width: '100%'}} image={prod.photos}/>
                                 <CardContent>
                                     <h3>{prod.name}</h3>

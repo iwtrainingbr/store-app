@@ -98,7 +98,7 @@ export default function Home(props) {
           {categories.map(cat => (
               <Grid item xs={6}>
                   <Card>
-                      <CardActionArea onClick={() => props.history.push(`/categorias/${cat.id}`)}>
+                      <CardActionArea data-action={"acessar-categoria"} onClick={() => props.history.push(`/categorias/${cat.id}`)}>
                           <CardContent align={"center"}>
                               {cat.name}
                           </CardContent>
